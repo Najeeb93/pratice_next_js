@@ -3,6 +3,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
+    <>
     <header className="bg-red-400 p-4">
       <nav>
         <ul className="flex justify-center space-x-6">
@@ -17,9 +18,10 @@ export default function Home() {
         <li>
           <Link href="/contact" className="text-white hover:bg-gray-400 px-3 py-2 rounded">Contact </Link>
         </li>
-
         </ul>
       </nav>
     </header>
+    <h1 className="text-[30px] text-gray-500 font-bold underline text-center">App Router Home Page</h1>
+    </>
   )
 }
